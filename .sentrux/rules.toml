@@ -1,0 +1,25 @@
+[constraints]
+max_cycles = 0
+max_coupling = "B"
+max_cc = 25
+no_god_files = true
+
+[[layers]]
+name = "cli"
+paths = ["cmd/*"]
+order = 2
+
+[[layers]]
+name = "profiles"
+paths = ["internal/profiles/*"]
+order = 0
+
+[[layers]]
+name = "runner"
+paths = ["internal/runner/*"]
+order = 1
+
+[[layers]]
+name = "reporter"
+paths = ["internal/reporter/*"]
+order = 1
