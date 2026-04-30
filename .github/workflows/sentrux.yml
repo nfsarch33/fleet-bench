@@ -1,0 +1,20 @@
+name: Sentrux Gate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  sentrux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Install sentrux
+        run: cargo install --locked --git https://github.com/sentrux/sentrux sentrux
+      - name: Check structural quality
+        run: |
+          set -euo pipefail
+          sentrux gate .
+          sentrux check .
