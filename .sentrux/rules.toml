@@ -7,12 +7,12 @@ no_god_files = true
 [[layers]]
 name = "cli"
 paths = ["cmd/*"]
-order = 2
+order = 0
 
 [[layers]]
 name = "profiles"
 paths = ["internal/profiles/*"]
-order = 0
+order = 2
 
 [[layers]]
 name = "runner"
@@ -22,4 +22,4 @@ order = 1
 [[layers]]
 name = "reporter"
 paths = ["internal/reporter/*"]
-order = 1
+order = 2
