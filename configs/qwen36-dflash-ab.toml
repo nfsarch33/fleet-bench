@@ -1,0 +1,11 @@
+name = "qwen36-dflash-ab"
+endpoint = "http://127.0.0.1:8002/v1"
+model = "z-lab/Qwen3.6-27B-DFlash"
+runtime = "vllm"
+variant = "dflash"
+quantization = "draft"
+gpu = "rtx3090"
+concurrency = 2
+requests = 5
+timeout = "30s"
+soak_minutes = 120

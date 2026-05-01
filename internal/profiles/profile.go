@@ -10,12 +10,17 @@ import (
 )
 
 type Profile struct {
-	Name        string
-	Endpoint    string
-	Model       string
-	Concurrency int
-	Requests    int
-	Timeout     time.Duration
+	Name         string
+	Endpoint     string
+	Model        string
+	Runtime      string
+	Variant      string
+	Quantization string
+	GPU          string
+	Concurrency  int
+	Requests     int
+	Timeout      time.Duration
+	SoakMinutes  int
 }
 
 func Parse(r io.Reader) (Profile, error) {
@@ -25,9 +30,13 @@ func Parse(r io.Reader) (Profile, error) {
 	}
 
 	profile := Profile{
-		Name:     values["name"],
-		Endpoint: values["endpoint"],
-		Model:    values["model"],
+		Name:         values["name"],
+		Endpoint:     values["endpoint"],
+		Model:        values["model"],
+		Runtime:      values["runtime"],
+		Variant:      values["variant"],
+		Quantization: values["quantization"],
+		GPU:          values["gpu"],
 	}
 
 	if profile.Name == "" || profile.Endpoint == "" || profile.Model == "" {
@@ -48,6 +57,12 @@ func Parse(r io.Reader) (Profile, error) {
 		return Profile{}, fmt.Errorf("timeout must be a positive duration")
 	}
 	profile.Timeout = timeout
+	if values["soak_minutes"] != "" {
+		profile.SoakMinutes, err = positiveInt(values["soak_minutes"], "soak_minutes")
+		if err != nil {
+			return Profile{}, err
+		}
+	}
 
 	return profile, nil
 }
