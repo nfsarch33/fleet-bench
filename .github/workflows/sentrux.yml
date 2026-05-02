@@ -11,6 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
+      - name: Install Sentrux build deps
+        run: sudo apt-get update && sudo apt-get install -y pkg-config libglib2.0-dev
       - name: Install sentrux
         run: cargo install --locked --git https://github.com/sentrux/sentrux sentrux
       - name: Check structural quality
