@@ -43,6 +43,35 @@ timeout = "3s"
 	}
 }
 
+func TestParseProfile_ReadsQwenABMetadata(t *testing.T) {
+	t.Parallel()
+
+	input := strings.NewReader(`
+name = "qwen36-dflash-ab"
+endpoint = "http://127.0.0.1:8002/v1"
+model = "z-lab/Qwen3.6-27B-DFlash"
+concurrency = 2
+requests = 5
+timeout = "3s"
+runtime = "vllm"
+variant = "dflash"
+quantization = "draft"
+gpu = "rtx3090"
+soak_minutes = 120
+`)
+
+	profile, err := Parse(input)
+	if err != nil {
+		t.Fatalf("Parse returned error: %v", err)
+	}
+	if profile.Runtime != "vllm" || profile.Variant != "dflash" || profile.Quantization != "draft" || profile.GPU != "rtx3090" {
+		t.Fatalf("metadata mismatch: %#v", profile)
+	}
+	if profile.SoakMinutes != 120 {
+		t.Fatalf("SoakMinutes = %d, want 120", profile.SoakMinutes)
+	}
+}
+
 func TestParseProfile_RejectsMissingRequiredFields(t *testing.T) {
 	t.Parallel()
 
