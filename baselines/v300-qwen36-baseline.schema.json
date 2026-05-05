@@ -1,0 +1,471 @@
+{
+  "metadata": {
+    "category_count": 5,
+    "corpus_name": "v300-baseline",
+    "corpus_size": 50,
+    "generated_at": "2026-05-05T03:28:00Z",
+    "latency_provenance": "in-process httptest server (NOT representative of live router)",
+    "live_baseline_doc": "docs/v300-baseline-lock.md",
+    "live_baseline_path": "baselines/v300-qwen36-baseline.live.json (produced on WSL1)",
+    "quality_provenance": "stub responses keyed per-prompt-prefix (NOT a live model evaluation)",
+    "schema_lock": true,
+    "sprint": "v300"
+  },
+  "report": {
+    "model": "qwen3.6-schema-lock",
+    "endpoint": "http://127.0.0.1:50067/v1",
+    "timestamp": "2026-05-05T03:28:00.598186Z",
+    "rows": [
+      {
+        "category": "code",
+        "prompt_id": "code-001",
+        "latency_ns": 1593000,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-002",
+        "latency_ns": 320167,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-003",
+        "latency_ns": 180375,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-004",
+        "latency_ns": 177625,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-005",
+        "latency_ns": 288042,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-006",
+        "latency_ns": 348542,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-007",
+        "latency_ns": 243709,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-008",
+        "latency_ns": 204333,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-009",
+        "latency_ns": 200583,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-010",
+        "latency_ns": 210125,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-011",
+        "latency_ns": 177500,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-012",
+        "latency_ns": 204084,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-013",
+        "latency_ns": 217958,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-014",
+        "latency_ns": 183084,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "code",
+        "prompt_id": "code-015",
+        "latency_ns": 194500,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "reasoning",
+        "prompt_id": "reason-001",
+        "latency_ns": 207833,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "reasoning",
+        "prompt_id": "reason-002",
+        "latency_ns": 173333,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "reasoning",
+        "prompt_id": "reason-003",
+        "latency_ns": 171375,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "reasoning",
+        "prompt_id": "reason-004",
+        "latency_ns": 211542,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "reasoning",
+        "prompt_id": "reason-005",
+        "latency_ns": 243792,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "reasoning",
+        "prompt_id": "reason-006",
+        "latency_ns": 205542,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "reasoning",
+        "prompt_id": "reason-007",
+        "latency_ns": 153792,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "reasoning",
+        "prompt_id": "reason-008",
+        "latency_ns": 210125,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "reasoning",
+        "prompt_id": "reason-009",
+        "latency_ns": 310125,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "reasoning",
+        "prompt_id": "reason-010",
+        "latency_ns": 215667,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "summarisation",
+        "prompt_id": "sum-001",
+        "latency_ns": 187709,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "summarisation",
+        "prompt_id": "sum-002",
+        "latency_ns": 158375,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "summarisation",
+        "prompt_id": "sum-003",
+        "latency_ns": 278875,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "summarisation",
+        "prompt_id": "sum-004",
+        "latency_ns": 226208,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "summarisation",
+        "prompt_id": "sum-005",
+        "latency_ns": 244916,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "summarisation",
+        "prompt_id": "sum-006",
+        "latency_ns": 198125,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "summarisation",
+        "prompt_id": "sum-007",
+        "latency_ns": 200625,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "summarisation",
+        "prompt_id": "sum-008",
+        "latency_ns": 161500,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "summarisation",
+        "prompt_id": "sum-009",
+        "latency_ns": 163625,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "summarisation",
+        "prompt_id": "sum-010",
+        "latency_ns": 150500,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "translation",
+        "prompt_id": "trans-001",
+        "latency_ns": 227250,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "translation",
+        "prompt_id": "trans-002",
+        "latency_ns": 216417,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "translation",
+        "prompt_id": "trans-003",
+        "latency_ns": 181875,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "translation",
+        "prompt_id": "trans-004",
+        "latency_ns": 163833,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "translation",
+        "prompt_id": "trans-005",
+        "latency_ns": 188167,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "translation",
+        "prompt_id": "trans-006",
+        "latency_ns": 165833,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "translation",
+        "prompt_id": "trans-007",
+        "latency_ns": 154125,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "translation",
+        "prompt_id": "trans-008",
+        "latency_ns": 148917,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "chat",
+        "prompt_id": "chat-001",
+        "latency_ns": 147625,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "chat",
+        "prompt_id": "chat-002",
+        "latency_ns": 154417,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "chat",
+        "prompt_id": "chat-003",
+        "latency_ns": 146250,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "chat",
+        "prompt_id": "chat-004",
+        "latency_ns": 158958,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "chat",
+        "prompt_id": "chat-005",
+        "latency_ns": 165583,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "chat",
+        "prompt_id": "chat-006",
+        "latency_ns": 161041,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      },
+      {
+        "category": "chat",
+        "prompt_id": "chat-007",
+        "latency_ns": 185959,
+        "status_code": 200,
+        "tokens": 32,
+        "quality_pass": true
+      }
+    ],
+    "aggregate": {
+      "total": 50,
+      "quality_pass": 50,
+      "quality_rate": 1,
+      "latency_p50_ns": 194500,
+      "latency_p95_ns": 320167,
+      "latency_p99_ns": 1593000,
+      "per_category": {
+        "chat": {
+          "total": 7,
+          "quality_pass": 7,
+          "pass_rate": 1,
+          "latency_p50_ns": 158958,
+          "latency_p95_ns": 185959,
+          "latency_p99_ns": 185959
+        },
+        "code": {
+          "total": 15,
+          "quality_pass": 15,
+          "pass_rate": 1,
+          "latency_p50_ns": 204333,
+          "latency_p95_ns": 1593000,
+          "latency_p99_ns": 1593000
+        },
+        "reasoning": {
+          "total": 10,
+          "quality_pass": 10,
+          "pass_rate": 1,
+          "latency_p50_ns": 210125,
+          "latency_p95_ns": 310125,
+          "latency_p99_ns": 310125
+        },
+        "summarisation": {
+          "total": 10,
+          "quality_pass": 10,
+          "pass_rate": 1,
+          "latency_p50_ns": 198125,
+          "latency_p95_ns": 278875,
+          "latency_p99_ns": 278875
+        },
+        "translation": {
+          "total": 8,
+          "quality_pass": 8,
+          "pass_rate": 1,
+          "latency_p50_ns": 181875,
+          "latency_p95_ns": 227250,
+          "latency_p99_ns": 227250
+        }
+      }
+    }
+  }
+}
