@@ -1,0 +1,50 @@
+# fleet-bench
+
+> Benchmark harness for local LLM lanes and router fair-share validation.
+> Parses lane profiles from TOML, runs CI-safe OpenAI-compatible chat
+> completion probes, and aggregates latency, status, and token-throughput
+> results.
+
+## Overview
+
+- Name: fleet-bench
+- Purpose: Benchmark harness for validating local LLM inference lanes and router fair-share queuing; runs CI-safe completion probes and reports latency/throughput metrics.
+- Language(s): Go
+- License: MIT
+- Authoritative README: <https://github.com/nfsarch33/fleet-bench#readme>
+- Source of truth branch: `main`
+
+## Quick Start
+
+- Build and test:
+  ```
+  make test
+  make vet
+  make lint
+  ```
+- Minimum runtime prerequisites: Go 1.22+
+
+## Key Concepts
+
+- Lane profiles defined in TOML files
+- CI-safe OpenAI-compatible chat completion probes
+- Latency, status, and token-throughput aggregation
+- Sentrux quality gate: `make sentrux`
+
+## Runnable Examples
+
+- Run tests: `make test`
+- Run quality checks: `make vet && make lint && make sentrux`
+
+## Related Repos
+
+- [llm-cluster-router](https://github.com/nfsarch33/llm-cluster-router) — the router whose fair-share queuing this harness validates
+
+## Operational Notes
+
+- Issue tracker: <https://github.com/nfsarch33/fleet-bench/issues>
+
+---
+
+*This file follows the emerging `llms.txt` convention adopted by cloudwego/eino,
+Anthropic tooling, and others.*
