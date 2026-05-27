@@ -1,20 +1,29 @@
 # fleet-bench
 
-Private benchmark harness for local LLM lanes and router fair-share validation.
+Benchmark harness for local LLM lanes and router fair-share validation (Go, OpenAI-compatible probes).
 
-## Scope
+## Features
 
-- Parse lane profiles from small TOML files.
-- Run CI-safe OpenAI-compatible chat completion probes.
-- Aggregate latency, status, and token-throughput results.
+- Parse lane profiles from TOML configuration files
+- Run CI-safe OpenAI-compatible chat completion probes against any `/v1/chat/completions` endpoint
+- Aggregate latency, status, and token-throughput results
+- Validate fair-share queue behavior under concurrent load
 
-This repository is private under `nfsarch33` and is intentionally separate from `global-kb` because it has a benchmark release cadence and may grow fleet-specific fixtures.
+## Usage
 
-## Commands
+```bash
+go build -o fleet-bench .
+./fleet-bench -config lanes.toml -url http://localhost:8080
+```
+
+## Development
 
 ```bash
 make test
 make vet
 make lint
-make sentrux
 ```
+
+## License
+
+MIT. See [LICENSE](LICENSE).
